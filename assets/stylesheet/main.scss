@@ -1,0 +1,29 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@layer base {
+  body {
+    @apply text-base;
+  }
+}
+
+@layer components {
+  .btn {
+    @apply px-2 py-1 rounded transition-colors hover:bg-opacity-90;
+  }
+
+  .btn-primary {
+    @apply bg-primary text-white;
+  }
+
+  .btn-secondary {
+    @apply bg-secondary text-black;
+  }
+}
+
+@layer utilities {
+
+}
