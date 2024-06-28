@@ -1,8 +1,5 @@
 <template>
-  <div class="container">
-    <BannerCard />
-    <ProductList />
-  </div>
+  <NuxtPage />
 </template>
 
 <script setup></script>
