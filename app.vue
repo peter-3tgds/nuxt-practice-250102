@@ -1,14 +1,12 @@
 <template>
   <div>
     <h1 class="title">Hello Nuxt!!</h1>
-    <p>{{ count }}</p>
-    <button type="button" @click="() => count += 1">增加</button>
+    <p>{{ name }}</p>
   </div>
 </template>
 
 <script setup>
-
-const count = ref(10)
+const name = 'peter'
 </script>
 
 <style lang="scss" scoped>
