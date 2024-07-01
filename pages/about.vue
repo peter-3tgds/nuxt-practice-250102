@@ -8,3 +8,9 @@
     </nav>
   </div>
 </template>
+
+<script setup>
+definePageMeta({
+  layout: 'custom-layout'
+})
+</script>
