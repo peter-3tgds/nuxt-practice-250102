@@ -12,7 +12,7 @@
 
 @layer components {
   .btn {
-    @apply px-2 py-1 rounded transition-colors hover:bg-opacity-90;
+    @apply px-2 py-1 rounded transition-colors hover:bg-opacity-90 min-w-[60px];
   }
 
   .btn-primary {
