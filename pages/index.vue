@@ -89,9 +89,12 @@
       <section class="mb-5">
         <h2 class="mb-2 text-center text-3xl text-primary">元件</h2>
         <nav>
-          <ul class="flex items-center justify-center gap-x-3">
+          <ul class="text-center">
             <li>
               <nuxt-link to="/component" class="text-2xl text-secondary">/component</nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/component2" class="text-2xl text-secondary">/component2</nuxt-link>
             </li>
           </ul>
         </nav>
