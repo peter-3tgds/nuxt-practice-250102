@@ -15,6 +15,11 @@
         <LazyBaseButton v-if="show" />
       </div>
     </div>
+    <div class="space-y-2">
+      <h2>伺服器與客戶端渲染元件</h2>
+      <JustClient />
+      <ServerAndClient />
+    </div>
   </div>
 </template>
 
