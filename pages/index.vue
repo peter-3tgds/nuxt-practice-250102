@@ -99,6 +99,16 @@
           </ul>
         </nav>
       </section>
+      <section class="mb-5">
+        <h2 class="mb-2 text-center text-3xl text-primary">組合式函式 (Composables)</h2>
+        <nav>
+          <ul class="text-center">
+            <li>
+              <nuxt-link to="/composables" class="text-2xl text-secondary">/composables</nuxt-link>
+            </li>
+          </ul>
+        </nav>
+      </section>
     </template>
   </div>
 </template>

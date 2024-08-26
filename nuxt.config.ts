@@ -2,5 +2,15 @@
 export default defineNuxtConfig({
   devtools: { enabled: true },
   modules: ['@nuxtjs/tailwindcss'],
-  css: ['~/assets/stylesheet/main.scss']
+  css: ['~/assets/stylesheet/main.scss'],
+  imports: {
+    dirs: [
+      // 掃描 composables 目錄頂層
+      'composables',
+      // 掃描深度一層的特定檔案
+      'composables/*/index.{ts,js,mjs,mts}',
+      // 掃描整個 composables 目錄下的檔案
+      'composables/**'
+    ]
+  }
 })
