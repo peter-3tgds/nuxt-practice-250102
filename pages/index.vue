@@ -5,6 +5,7 @@
       <li><button type="button" class="btn btn-primary" @click="week = 'all'">All</button></li>
       <li><button type="button" class="btn btn-primary" @click="week = '1'">week1</button></li>
       <li><button type="button" class="btn btn-primary" @click="week = '2'">week2</button></li>
+      <li><button type="button" class="btn btn-primary" @click="week = '3'">week3</button></li>
     </ul>
     <template v-if="week === '1' || week === 'all'">
       <section class="mb-5">
@@ -105,6 +106,25 @@
           <ul class="text-center">
             <li>
               <nuxt-link to="/composables" class="text-2xl text-secondary">/composables</nuxt-link>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </template>
+    <template v-if="week === '3' || week === 'all'">
+      <section class="mb-5">
+        <h2 class="mb-2 text-center text-3xl text-primary">Store</h2>
+        <nav>
+          <ul class="text-center">
+            <li>
+              <nuxt-link to="/store/counter" class="text-2xl text-secondary">
+                /store/counter
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/store/display" class="text-2xl text-secondary">
+                /store/display
+              </nuxt-link>
             </li>
           </ul>
         </nav>
