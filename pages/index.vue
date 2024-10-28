@@ -113,7 +113,7 @@
     </template>
     <template v-if="week === '3' || week === 'all'">
       <section class="mb-5">
-        <h2 class="mb-2 text-center text-3xl text-primary">Store</h2>
+        <h2 class="mb-2 text-center text-3xl text-primary">Store 狀態儲存: pinia 套件</h2>
         <nav>
           <ul class="text-center">
             <li>
