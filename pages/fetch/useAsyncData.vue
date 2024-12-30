@@ -35,5 +35,5 @@
 </template>
 
 <script setup>
-const { data, pending, refresh, error } = await useFetch('/api/user')
+const { data, pending, refresh, error } = await useAsyncData('user', () => $fetch('/api/user'))
 </script>

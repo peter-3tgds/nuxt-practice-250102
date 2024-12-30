@@ -16,18 +16,21 @@ export default defineEventHandler(async () => {
             title: 'Post 2',
             content: 'Content 2'
           }
-        ]
+        ],
+        time: new Date().toLocaleTimeString()
       }
       resolve(res)
-    }, 3000)
+    }, 1000)
   })
 
   try {
     const res = await promise
     return res
   } catch (error) {
-    return {
-      message: '取得貼文列表失敗'
-    }
+    throw createError({
+      message: '取得貼文列表失敗',
+      statusCode: 400,
+      statusMessage: error.message
+    })
   }
 })

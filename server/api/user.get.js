@@ -1,29 +1,27 @@
 export default defineEventHandler(async () => {
   console.log(`api request GET method: /api/user`)
 
-  // return {
-  //   name: 'Peter',
-  //   gender: 'male',
-  //   email: 'peter.chen@3tgds.com'
-  // }
   const promise = new Promise((resolve, reject) => {
     setTimeout(() => {
       const res = {
         name: 'Peter',
         gender: 'male',
-        email: 'peter.chen@3tgds.com',
+        email: 'peter.chen@ccc.com',
         time: new Date().toLocaleTimeString()
       }
       resolve(res)
-    }, 2000)
+      reject(new Error('test:Server API error'))
+    }, 500)
   })
 
   try {
     const res = await promise
     return res
   } catch (error) {
-    return {
-      message: '取得用戶資料失敗'
-    }
+    throw createError({
+      message: '取得用戶資料失敗',
+      statusCode: 400,
+      statusMessage: error.message
+    })
   }
 })
