@@ -15,11 +15,15 @@ export default defineEventHandler(async () => {
         time: new Date().toLocaleTimeString()
       }
       resolve(res)
-    }, 1000)
+    }, 2000)
   })
 
   try {
     const res = await promise
     return res
-  } catch (error) {}
+  } catch (error) {
+    return {
+      message: '取得用戶資料失敗'
+    }
+  }
 })
