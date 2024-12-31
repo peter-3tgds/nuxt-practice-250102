@@ -6,6 +6,7 @@
       <li><button type="button" class="btn btn-primary" @click="week = '1'">week1</button></li>
       <li><button type="button" class="btn btn-primary" @click="week = '2'">week2</button></li>
       <li><button type="button" class="btn btn-primary" @click="week = '3'">week3</button></li>
+      <li><button type="button" class="btn btn-primary" @click="week = '4'">week4</button></li>
     </ul>
     <template v-if="week === '1' || week === 'all'">
       <section class="mb-5">
@@ -124,6 +125,47 @@
             <li>
               <nuxt-link to="/store/display" class="text-2xl text-secondary">
                 /store/display
+              </nuxt-link>
+            </li>
+          </ul>
+        </nav>
+      </section>
+    </template>
+    <template v-if="week === '4' || week === 'all'">
+      <section class="mb-5">
+        <h2 class="mb-2 text-center text-3xl text-primary">$fetch</h2>
+        <nav>
+          <ul class="text-center">
+            <li>
+              <nuxt-link to="/fetch" class="text-2xl text-secondary"> /fetch </nuxt-link>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="mb-5">
+        <h2 class="mb-2 text-center text-3xl text-primary">useFetch</h2>
+        <nav>
+          <ul class="text-center">
+            <li>
+              <nuxt-link to="/fetch/useFetch" class="text-2xl text-secondary">
+                /fetch/useFetch
+              </nuxt-link>
+            </li>
+          </ul>
+        </nav>
+      </section>
+      <section class="mb-5">
+        <h2 class="mb-2 text-center text-3xl text-primary">useAsyncData</h2>
+        <nav>
+          <ul class="text-center">
+            <li>
+              <nuxt-link to="/fetch/useAsyncData" class="text-2xl text-secondary">
+                /fetch/useAsyncData
+              </nuxt-link>
+            </li>
+            <li>
+              <nuxt-link to="/fetch/useAsyncData2" class="text-2xl text-secondary">
+                /fetch/useAsyncData2
               </nuxt-link>
             </li>
           </ul>
